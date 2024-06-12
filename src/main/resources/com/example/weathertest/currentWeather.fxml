@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.weathertest.CurrentWeatherDisplayController">
+   <children>
+      <Button fx:id="switchToWindDisplay" layoutX="270.0" layoutY="518.0" mnemonicParsing="false" text="Wind" textFill="#a60000" />
+      <Button fx:id="switchToStatisticsDisplay" layoutX="394.0" layoutY="518.0" mnemonicParsing="false" text="Statistics" textFill="#9c0404" />
+      <Label fx:id="temp" layoutX="390.0" layoutY="163.0" prefHeight="25.0" prefWidth="123.0">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="228.0" layoutY="42.0" prefHeight="25.0" prefWidth="33.0" text="City: " textFill="#0094b9" />
+      <Label fx:id="chosenCity" layoutX="286.0" layoutY="46.0" prefHeight="17.0" prefWidth="108.0" textFill="#007ba4" />
+      <Label layoutX="300.0" layoutY="158.0" prefHeight="35.0" prefWidth="78.0" text="Temperature" />
+      <Label layoutX="300.0" layoutY="206.0" prefHeight="17.0" prefWidth="78.0" text="Humiddty" />
+      <Label layoutX="301.0" layoutY="243.0" prefHeight="17.0" prefWidth="61.0" text="Pressure" />
+      <Label fx:id="humidity" layoutX="402.0" layoutY="202.0" prefHeight="25.0" prefWidth="108.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="pressure" layoutX="402.0" layoutY="235.0" prefHeight="25.0" prefWidth="85.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="switchToFirstPage" layoutX="116.0" layoutY="518.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="78.0" text="First Page" textFill="#a10303" />
+      <Button layoutX="84.0" layoutY="177.0" mnemonicParsing="false" onAction="#onUpdateButtonClick" prefHeight="50.0" prefWidth="85.0" text="Update" textFill="#8b0000" />
+      <Label layoutX="201.0" layoutY="7.0" prefHeight="35.0" prefWidth="200.0" text="Current Weather" textFill="#048aba">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
